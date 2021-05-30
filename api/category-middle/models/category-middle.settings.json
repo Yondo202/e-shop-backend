@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_middles",
+  "info": {
+    "name": "category-middle",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "key": {
+      "type": "text"
+    },
+    "category_main": {
+      "model": "category-main",
+      "via": "category_middles"
+    },
+    "category_details": {
+      "via": "category_middle",
+      "collection": "category-detail"
+    }
+  }
+}

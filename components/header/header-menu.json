@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_header_header_menus",
+  "info": {
+    "name": "header_menu",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "submenu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.submenu"
+    }
+  }
+}

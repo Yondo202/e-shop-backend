@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_components_help_menus",
+  "info": {
+    "name": "help_menu",
+    "icon": "ambulance",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "profile_menu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.profile-menu"
+    }
+  }
+}
