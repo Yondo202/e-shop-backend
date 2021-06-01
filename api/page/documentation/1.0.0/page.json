@@ -525,14 +525,14 @@
           "name": {
             "type": "string"
           },
-          "slug": {
-            "type": "string"
-          },
           "Layout": {
             "type": "array",
             "items": {
               "oneOf": []
             }
+          },
+          "slug": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -545,14 +545,14 @@
           "name": {
             "type": "string"
           },
-          "slug": {
-            "type": "string"
-          },
           "Layout": {
             "type": "array",
             "items": {
               "oneOf": []
             }
+          },
+          "slug": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

@@ -15,12 +15,12 @@
     "name": {
       "type": "string"
     },
-    "slug": {
-      "type": "string"
-    },
     "Layout": {
       "type": "dynamiczone",
       "components": []
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }
