@@ -15,16 +15,18 @@
     "name": {
       "type": "string"
     },
-    "key": {
-      "type": "text"
-    },
-    "category_main": {
-      "model": "category-main",
-      "via": "category_middles"
-    },
     "category_details": {
       "via": "category_middle",
       "collection": "category-detail"
+    },
+    "page": {
+      "via": "category_middles",
+      "model": "page"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
     }
   }
 }

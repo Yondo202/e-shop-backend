@@ -2,15 +2,13 @@
   "collectionName": "components_header_submenu_children",
   "info": {
     "name": "submenu_child",
-    "icon": "align-center"
+    "icon": "align-center",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "name": {
-      "type": "string"
-    },
-    "slug": {
-      "type": "string"
+    "category_details": {
+      "collection": "category-detail"
     }
   }
 }

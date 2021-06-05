@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_header_headers",
+  "info": {
+    "name": "header",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "submenu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.submenu"
+    },
+    "pages": {
+      "collection": "page"
+    }
+  }
+}

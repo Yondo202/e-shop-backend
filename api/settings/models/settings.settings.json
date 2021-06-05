@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "header": {
-      "type": "component",
-      "repeatable": true,
-      "component": "header.header-menu"
-    },
     "footer_menu": {
       "type": "component",
       "repeatable": true,
@@ -25,7 +20,7 @@
     "help_menu": {
       "type": "component",
       "repeatable": true,
-      "component": "components.help-menu"
+      "component": "header.help-menu"
     },
     "logo": {
       "model": "file",
@@ -38,6 +33,11 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "Header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.header"
     }
   }
 }

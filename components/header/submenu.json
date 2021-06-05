@@ -2,20 +2,18 @@
   "collectionName": "components_header_submenus",
   "info": {
     "name": "submenu",
-    "icon": "align-right"
+    "icon": "align-right",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "name": {
-      "type": "string"
-    },
-    "slug": {
-      "type": "string"
-    },
     "submenu_child": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "header.submenu-child"
+    },
+    "category_middles": {
+      "collection": "category-middle"
     }
   }
 }

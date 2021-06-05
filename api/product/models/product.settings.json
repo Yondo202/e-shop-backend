@@ -31,8 +31,8 @@
       "type": "biginteger"
     },
     "category_details": {
-      "collection": "category-detail",
       "via": "products",
+      "collection": "category-detail",
       "dominant": true
     },
     "tailbar": {

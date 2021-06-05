@@ -529,7 +529,8 @@
     "schemas": {
       "Category-middle": {
         "required": [
-          "id"
+          "id",
+          "slug"
         ],
         "properties": {
           "id": {
@@ -538,10 +539,46 @@
           "name": {
             "type": "string"
           },
-          "key": {
-            "type": "string"
+          "category_details": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "slug"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "category_middle": {
+                  "type": "string"
+                },
+                "products": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           },
-          "category_main": {
+          "page": {
             "required": [
               "id"
             ],
@@ -552,7 +589,10 @@
               "name": {
                 "type": "string"
               },
-              "key": {
+              "Layout": {
+                "type": "dynamiczone"
+              },
+              "slug": {
                 "type": "string"
               },
               "category_middles": {
@@ -572,42 +612,8 @@
               }
             }
           },
-          "category_details": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "key": {
-                  "type": "string"
-                },
-                "category_middle": {
-                  "type": "string"
-                },
-                "products": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "slug": {
+            "type": "uid"
           },
           "published_at": {
             "type": "string",
@@ -616,14 +622,11 @@
         }
       },
       "NewCategory-middle": {
+        "required": [
+          "slug"
+        ],
         "properties": {
           "name": {
-            "type": "string"
-          },
-          "key": {
-            "type": "string"
-          },
-          "category_main": {
             "type": "string"
           },
           "category_details": {
@@ -631,6 +634,12 @@
             "items": {
               "type": "string"
             }
+          },
+          "page": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "uid"
           },
           "published_at": {
             "type": "string",

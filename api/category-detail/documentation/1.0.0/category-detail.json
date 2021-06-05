@@ -529,7 +529,9 @@
     "schemas": {
       "Category-detail": {
         "required": [
-          "id"
+          "id",
+          "name",
+          "slug"
         ],
         "properties": {
           "id": {
@@ -538,12 +540,10 @@
           "name": {
             "type": "string"
           },
-          "key": {
-            "type": "string"
-          },
           "category_middle": {
             "required": [
-              "id"
+              "id",
+              "slug"
             ],
             "properties": {
               "id": {
@@ -552,17 +552,17 @@
               "name": {
                 "type": "string"
               },
-              "key": {
-                "type": "string"
-              },
-              "category_main": {
-                "type": "string"
-              },
               "category_details": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
+              },
+              "page": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "uid"
               },
               "published_at": {
                 "type": "string"
@@ -644,6 +644,9 @@
               }
             }
           },
+          "slug": {
+            "type": "uid"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -651,11 +654,12 @@
         }
       },
       "NewCategory-detail": {
+        "required": [
+          "name",
+          "slug"
+        ],
         "properties": {
           "name": {
-            "type": "string"
-          },
-          "key": {
             "type": "string"
           },
           "category_middle": {
@@ -666,6 +670,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "slug": {
+            "type": "uid"
           },
           "published_at": {
             "type": "string",

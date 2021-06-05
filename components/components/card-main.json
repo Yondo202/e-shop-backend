@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_components_card_mains",
+  "info": {
+    "name": "CardMain",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "products": {
+      "collection": "product"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_components_product_sliders",
+  "info": {
+    "name": "productSlider",
+    "icon": "angle-double-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "products": {
+      "collection": "product"
+    }
+  }
+}
