@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_details",
+  "info": {
+    "name": "Category-detail"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    },
+    "category_middle": {
+      "via": "category_details",
+      "model": "category-middle"
+    },
+    "products": {
+      "via": "category_details",
+      "collection": "product"
+    }
+  }
+}

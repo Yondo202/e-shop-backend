@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "name": "settings",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.header-menu"
+    },
+    "footer_menu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.footer-menu"
+    },
+    "help_menu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.help-menu"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

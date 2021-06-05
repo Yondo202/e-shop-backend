@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_header_submenus",
+  "info": {
+    "name": "submenu",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "submenu_child": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.submenu-child"
+    }
+  }
+}

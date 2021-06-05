@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_components_profile_menus",
+  "info": {
+    "name": "profile_menu",
+    "icon": "user-shield"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

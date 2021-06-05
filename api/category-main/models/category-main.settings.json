@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_mains",
+  "info": {
+    "name": "category-main",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "key": {
+      "type": "text"
+    },
+    "category_middles": {
+      "via": "category_main",
+      "collection": "category-middle"
+    }
+  }
+}
