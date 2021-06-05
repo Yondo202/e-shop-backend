@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "products",
   "info": {
-    "name": "product"
+    "name": "product",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -33,6 +34,40 @@
       "collection": "category-detail",
       "via": "products",
       "dominant": true
+    },
+    "tailbar": {
+      "type": "text"
+    },
+    "heregleh_zaavar": {
+      "type": "text"
+    },
+    "nairlaga": {
+      "type": "text"
+    },
+    "anhaaruulga": {
+      "type": "text"
+    },
+    "barcode": {
+      "type": "string",
+      "maxLength": 30,
+      "required": false
+    },
+    "itemcode": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20,
+      "unique": true
+    },
+    "price": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "sale_qty": {
+      "type": "decimal"
+    },
+    "sale_price": {
+      "type": "decimal"
     }
   }
 }

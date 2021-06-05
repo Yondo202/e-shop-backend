@@ -579,7 +579,9 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "itemcode",
+                "price"
               ],
               "properties": {
                 "id": {
@@ -602,6 +604,33 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "tailbar": {
+                  "type": "string"
+                },
+                "heregleh_zaavar": {
+                  "type": "string"
+                },
+                "nairlaga": {
+                  "type": "string"
+                },
+                "anhaaruulga": {
+                  "type": "string"
+                },
+                "barcode": {
+                  "type": "string"
+                },
+                "itemcode": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "number"
+                },
+                "sale_qty": {
+                  "type": "number"
+                },
+                "sale_price": {
+                  "type": "number"
                 },
                 "published_at": {
                   "type": "string"

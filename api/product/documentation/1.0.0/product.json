@@ -516,7 +516,9 @@
     "schemas": {
       "Product": {
         "required": [
-          "id"
+          "id",
+          "itemcode",
+          "price"
         ],
         "properties": {
           "id": {
@@ -635,6 +637,36 @@
               }
             }
           },
+          "tailbar": {
+            "type": "string"
+          },
+          "heregleh_zaavar": {
+            "type": "string"
+          },
+          "nairlaga": {
+            "type": "string"
+          },
+          "anhaaruulga": {
+            "type": "string"
+          },
+          "barcode": {
+            "type": "string",
+            "maxLength": 30
+          },
+          "itemcode": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "price": {
+            "type": "number",
+            "default": 0
+          },
+          "sale_qty": {
+            "type": "number"
+          },
+          "sale_price": {
+            "type": "number"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -642,6 +674,10 @@
         }
       },
       "NewProduct": {
+        "required": [
+          "itemcode",
+          "price"
+        ],
         "properties": {
           "name": {
             "type": "string"
@@ -654,6 +690,36 @@
             "items": {
               "type": "string"
             }
+          },
+          "tailbar": {
+            "type": "string"
+          },
+          "heregleh_zaavar": {
+            "type": "string"
+          },
+          "nairlaga": {
+            "type": "string"
+          },
+          "anhaaruulga": {
+            "type": "string"
+          },
+          "barcode": {
+            "type": "string",
+            "maxLength": 30
+          },
+          "itemcode": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "price": {
+            "type": "number",
+            "default": 0
+          },
+          "sale_qty": {
+            "type": "number"
+          },
+          "sale_price": {
+            "type": "number"
           },
           "published_at": {
             "type": "string",

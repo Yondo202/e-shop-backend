@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/01/2021 8:19:37 PM"
+    "x-generation-date": "06/05/2021 1:08:47 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5534,7 +5534,9 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "itemcode",
+                "price"
               ],
               "properties": {
                 "id": {
@@ -5557,6 +5559,33 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "tailbar": {
+                  "type": "string"
+                },
+                "heregleh_zaavar": {
+                  "type": "string"
+                },
+                "nairlaga": {
+                  "type": "string"
+                },
+                "anhaaruulga": {
+                  "type": "string"
+                },
+                "barcode": {
+                  "type": "string"
+                },
+                "itemcode": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "number"
+                },
+                "sale_qty": {
+                  "type": "number"
+                },
+                "sale_price": {
+                  "type": "number"
                 },
                 "published_at": {
                   "type": "string"
@@ -6079,7 +6108,9 @@
       },
       "Product": {
         "required": [
-          "id"
+          "id",
+          "itemcode",
+          "price"
         ],
         "properties": {
           "id": {
@@ -6198,6 +6229,36 @@
               }
             }
           },
+          "tailbar": {
+            "type": "string"
+          },
+          "heregleh_zaavar": {
+            "type": "string"
+          },
+          "nairlaga": {
+            "type": "string"
+          },
+          "anhaaruulga": {
+            "type": "string"
+          },
+          "barcode": {
+            "type": "string",
+            "maxLength": 30
+          },
+          "itemcode": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "price": {
+            "type": "number",
+            "default": 0
+          },
+          "sale_qty": {
+            "type": "number"
+          },
+          "sale_price": {
+            "type": "number"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6205,6 +6266,10 @@
         }
       },
       "NewProduct": {
+        "required": [
+          "itemcode",
+          "price"
+        ],
         "properties": {
           "name": {
             "type": "string"
@@ -6217,6 +6282,36 @@
             "items": {
               "type": "string"
             }
+          },
+          "tailbar": {
+            "type": "string"
+          },
+          "heregleh_zaavar": {
+            "type": "string"
+          },
+          "nairlaga": {
+            "type": "string"
+          },
+          "anhaaruulga": {
+            "type": "string"
+          },
+          "barcode": {
+            "type": "string",
+            "maxLength": 30
+          },
+          "itemcode": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "price": {
+            "type": "number",
+            "default": 0
+          },
+          "sale_qty": {
+            "type": "number"
+          },
+          "sale_price": {
+            "type": "number"
           },
           "published_at": {
             "type": "string",
