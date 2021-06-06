@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/05/2021 10:49:27 PM"
+    "x-generation-date": "06/06/2021 2:38:54 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5012,7 +5012,8 @@
               "required": [
                 "id",
                 "itemcode",
-                "price"
+                "price",
+                "slug"
               ],
               "properties": {
                 "id": {
@@ -5062,6 +5063,12 @@
                 },
                 "sale_price": {
                   "type": "number"
+                },
+                "bogino_tailbar": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "uid"
                 },
                 "published_at": {
                   "type": "string"
@@ -5366,7 +5373,8 @@
                         "required": [
                           "id",
                           "itemcode",
-                          "price"
+                          "price",
+                          "slug"
                         ],
                         "properties": {
                           "id": {
@@ -5416,6 +5424,12 @@
                           },
                           "sale_price": {
                             "type": "number"
+                          },
+                          "bogino_tailbar": {
+                            "type": "string"
+                          },
+                          "slug": {
+                            "type": "uid"
                           },
                           "published_at": {
                             "type": "string"
@@ -5560,7 +5574,8 @@
                         "required": [
                           "id",
                           "itemcode",
-                          "price"
+                          "price",
+                          "slug"
                         ],
                         "properties": {
                           "id": {
@@ -5610,6 +5625,12 @@
                           },
                           "sale_price": {
                             "type": "number"
+                          },
+                          "bogino_tailbar": {
+                            "type": "string"
+                          },
+                          "slug": {
+                            "type": "uid"
                           },
                           "published_at": {
                             "type": "string"
@@ -5743,7 +5764,8 @@
         "required": [
           "id",
           "itemcode",
-          "price"
+          "price",
+          "slug"
         ],
         "properties": {
           "id": {
@@ -5894,6 +5916,12 @@
           "sale_price": {
             "type": "number"
           },
+          "bogino_tailbar": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "uid"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5903,7 +5931,8 @@
       "NewProduct": {
         "required": [
           "itemcode",
-          "price"
+          "price",
+          "slug"
         ],
         "properties": {
           "name": {
@@ -5947,6 +5976,12 @@
           },
           "sale_price": {
             "type": "number"
+          },
+          "bogino_tailbar": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "uid"
           },
           "published_at": {
             "type": "string",

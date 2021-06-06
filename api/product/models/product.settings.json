@@ -68,6 +68,14 @@
     },
     "sale_price": {
       "type": "decimal"
+    },
+    "bogino_tailbar": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
     }
   }
 }

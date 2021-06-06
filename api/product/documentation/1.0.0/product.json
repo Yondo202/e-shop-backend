@@ -518,7 +518,8 @@
         "required": [
           "id",
           "itemcode",
-          "price"
+          "price",
+          "slug"
         ],
         "properties": {
           "id": {
@@ -669,6 +670,12 @@
           "sale_price": {
             "type": "number"
           },
+          "bogino_tailbar": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "uid"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -678,7 +685,8 @@
       "NewProduct": {
         "required": [
           "itemcode",
-          "price"
+          "price",
+          "slug"
         ],
         "properties": {
           "name": {
@@ -722,6 +730,12 @@
           },
           "sale_price": {
             "type": "number"
+          },
+          "bogino_tailbar": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "uid"
           },
           "published_at": {
             "type": "string",
