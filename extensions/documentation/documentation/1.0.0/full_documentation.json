@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/06/2021 2:38:54 PM"
+    "x-generation-date": "06/08/2021 9:29:49 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5678,7 +5678,103 @@
           "Layout": {
             "type": "array",
             "items": {
-              "oneOf": []
+              "oneOf": [
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "components.product-slider"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "products": {
+                      "type": "array",
+                      "items": {
+                        "required": [
+                          "id",
+                          "itemcode",
+                          "price",
+                          "slug"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "image": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "stock": {
+                            "type": "integer"
+                          },
+                          "category_details": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "tailbar": {
+                            "type": "string"
+                          },
+                          "heregleh_zaavar": {
+                            "type": "string"
+                          },
+                          "nairlaga": {
+                            "type": "string"
+                          },
+                          "anhaaruulga": {
+                            "type": "string"
+                          },
+                          "barcode": {
+                            "type": "string"
+                          },
+                          "itemcode": {
+                            "type": "string"
+                          },
+                          "price": {
+                            "type": "number"
+                          },
+                          "sale_qty": {
+                            "type": "number"
+                          },
+                          "sale_price": {
+                            "type": "number"
+                          },
+                          "bogino_tailbar": {
+                            "type": "string"
+                          },
+                          "slug": {
+                            "type": "uid"
+                          },
+                          "published_at": {
+                            "type": "string"
+                          },
+                          "created_by": {
+                            "type": "string"
+                          },
+                          "updated_by": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                }
+              ]
             }
           },
           "slug": {
@@ -5736,7 +5832,103 @@
           "Layout": {
             "type": "array",
             "items": {
-              "oneOf": []
+              "oneOf": [
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "components.product-slider"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "products": {
+                      "type": "array",
+                      "items": {
+                        "required": [
+                          "id",
+                          "itemcode",
+                          "price",
+                          "slug"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "image": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "stock": {
+                            "type": "integer"
+                          },
+                          "category_details": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "tailbar": {
+                            "type": "string"
+                          },
+                          "heregleh_zaavar": {
+                            "type": "string"
+                          },
+                          "nairlaga": {
+                            "type": "string"
+                          },
+                          "anhaaruulga": {
+                            "type": "string"
+                          },
+                          "barcode": {
+                            "type": "string"
+                          },
+                          "itemcode": {
+                            "type": "string"
+                          },
+                          "price": {
+                            "type": "number"
+                          },
+                          "sale_qty": {
+                            "type": "number"
+                          },
+                          "sale_price": {
+                            "type": "number"
+                          },
+                          "bogino_tailbar": {
+                            "type": "string"
+                          },
+                          "slug": {
+                            "type": "uid"
+                          },
+                          "published_at": {
+                            "type": "string"
+                          },
+                          "created_by": {
+                            "type": "string"
+                          },
+                          "updated_by": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                }
+              ]
             }
           },
           "slug": {

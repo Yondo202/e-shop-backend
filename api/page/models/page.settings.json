@@ -17,7 +17,9 @@
     },
     "Layout": {
       "type": "dynamiczone",
-      "components": []
+      "components": [
+        "components.product-slider"
+      ]
     },
     "slug": {
       "type": "string"
