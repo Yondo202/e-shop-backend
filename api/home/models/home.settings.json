@@ -16,7 +16,8 @@
       "type": "dynamiczone",
       "components": [
         "components.slider",
-        "components.product-slider"
+        "components.product-slider",
+        "components.homecategory"
       ]
     }
   }

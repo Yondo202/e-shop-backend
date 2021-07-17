@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_homecategories",
+  "info": {
+    "name": "Homecategory",
+    "icon": "bars"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
