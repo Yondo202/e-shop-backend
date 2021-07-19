@@ -15,12 +15,6 @@
     "name": {
       "type": "string"
     },
-    "Layout": {
-      "type": "dynamiczone",
-      "components": [
-        "components.product-slider"
-      ]
-    },
     "slug": {
       "type": "string"
     },

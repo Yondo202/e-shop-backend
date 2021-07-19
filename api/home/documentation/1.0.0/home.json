@@ -328,7 +328,8 @@
                       "type": "string",
                       "enum": [
                         "components.slider",
-                        "components.product-slider"
+                        "components.product-slider",
+                        "components.homecategory"
                       ]
                     },
                     "id": {
@@ -418,7 +419,8 @@
                       "type": "string",
                       "enum": [
                         "components.slider",
-                        "components.product-slider"
+                        "components.product-slider",
+                        "components.homecategory"
                       ]
                     },
                     "id": {
@@ -502,6 +504,27 @@
                           }
                         }
                       }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "components.slider",
+                        "components.product-slider",
+                        "components.homecategory"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -529,7 +552,8 @@
                       "type": "string",
                       "enum": [
                         "components.slider",
-                        "components.product-slider"
+                        "components.product-slider",
+                        "components.homecategory"
                       ]
                     },
                     "id": {
@@ -619,7 +643,8 @@
                       "type": "string",
                       "enum": [
                         "components.slider",
-                        "components.product-slider"
+                        "components.product-slider",
+                        "components.homecategory"
                       ]
                     },
                     "id": {
@@ -703,6 +728,27 @@
                           }
                         }
                       }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "components.slider",
+                        "components.product-slider",
+                        "components.homecategory"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
                     }
                   },
                   "required": [

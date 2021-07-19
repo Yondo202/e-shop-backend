@@ -589,9 +589,6 @@
               "name": {
                 "type": "string"
               },
-              "Layout": {
-                "type": "dynamiczone"
-              },
               "slug": {
                 "type": "string"
               },

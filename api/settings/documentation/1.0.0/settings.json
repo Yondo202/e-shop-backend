@@ -566,9 +566,6 @@
                     "name": {
                       "type": "string"
                     },
-                    "Layout": {
-                      "type": "dynamiczone"
-                    },
                     "slug": {
                       "type": "string"
                     },
@@ -780,9 +777,6 @@
                     },
                     "name": {
                       "type": "string"
-                    },
-                    "Layout": {
-                      "type": "dynamiczone"
                     },
                     "slug": {
                       "type": "string"
