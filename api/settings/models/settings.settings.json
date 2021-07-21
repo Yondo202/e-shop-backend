@@ -38,6 +38,15 @@
       "type": "component",
       "repeatable": false,
       "component": "header.header"
+    },
+    "color": {
+      "type": "string",
+      "default": "rgb(21,58,91)",
+      "required": false
+    },
+    "button_color": {
+      "type": "string",
+      "default": "rgb(21,58,91)"
     }
   }
 }

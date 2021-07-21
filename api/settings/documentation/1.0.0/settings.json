@@ -589,6 +589,14 @@
               }
             }
           },
+          "color": {
+            "type": "string",
+            "default": "rgb(21,58,91)"
+          },
+          "button_color": {
+            "type": "string",
+            "default": "rgb(21,58,91)"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -800,6 +808,14 @@
                 }
               }
             }
+          },
+          "color": {
+            "type": "string",
+            "default": "rgb(21,58,91)"
+          },
+          "button_color": {
+            "type": "string",
+            "default": "rgb(21,58,91)"
           },
           "published_at": {
             "type": "string",
