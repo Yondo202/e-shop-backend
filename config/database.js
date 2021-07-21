@@ -10,9 +10,12 @@ module.exports = ({ env }) => ({
         database: env('DATABASE_NAME', 'eshop'),
         username: env('DATABASE_USERNAME', 'root'),
         password: env('DATABASE_PASSWORD', 'RelativitY@9'),
+        charset: "utf8mb4",
         ssl: env.bool('DATABASE_SSL', true),
       },
-      options: {}
+      options: {
+        charset: "utf8mb4"
+      }
     },
   },
 });

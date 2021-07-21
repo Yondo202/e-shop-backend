@@ -16,6 +16,7 @@
     "axios": "^0.21.1",
     "knex": "0.21.18",
     "mysql": "2.18.1",
+    "pluralize": "^8.0.0",
     "strapi": "3.6.2",
     "strapi-admin": "3.6.2",
     "strapi-connector-bookshelf": "3.6.2",
