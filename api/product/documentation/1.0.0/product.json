@@ -676,6 +676,31 @@
           "slug": {
             "type": "uid"
           },
+          "brand": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "logo": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -736,6 +761,9 @@
           },
           "slug": {
             "type": "uid"
+          },
+          "brand": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

@@ -493,6 +493,9 @@
                           "slug": {
                             "type": "uid"
                           },
+                          "brand": {
+                            "type": "string"
+                          },
                           "published_at": {
                             "type": "string"
                           },
@@ -716,6 +719,9 @@
                           },
                           "slug": {
                             "type": "uid"
+                          },
+                          "brand": {
+                            "type": "string"
                           },
                           "published_at": {
                             "type": "string"

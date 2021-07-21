@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/category-details": {
+    "/brands": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10,10 +10,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Brand"
                   }
                 }
               }
@@ -52,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Category-detail"
+          "Brand"
         ],
         "parameters": [
           {
@@ -202,11 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Brand"
                 }
               }
             }
@@ -244,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Category-detail"
+          "Brand"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCategory-detail"
+                "$ref": "#/components/schemas/NewBrand"
               }
             }
           }
         }
       }
     },
-    "/category-details/count": {
+    "/brands/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -270,8 +265,8 @@
               "application/json": {
                 "schema": {
                   "properties": {
-                    "foo": {
-                      "type": "string"
+                    "count": {
+                      "type": "integer"
                     }
                   }
                 }
@@ -311,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Category-detail"
+          "Brand"
         ],
         "parameters": []
       }
     },
-    "/category-details/{id}": {
+    "/brands/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -326,11 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Brand"
                 }
               }
             }
@@ -368,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Category-detail"
+          "Brand"
         ],
         "parameters": [
           {
@@ -392,11 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Brand"
                 }
               }
             }
@@ -434,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Category-detail"
+          "Brand"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCategory-detail"
+                "$ref": "#/components/schemas/NewBrand"
               }
             }
           }
@@ -508,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Category-detail"
+          "Brand"
         ],
         "parameters": [
           {
@@ -527,11 +514,9 @@
   },
   "components": {
     "schemas": {
-      "Category-detail": {
+      "Brand": {
         "required": [
-          "id",
-          "name",
-          "slug"
+          "id"
         ],
         "properties": {
           "id": {
@@ -540,10 +525,15 @@
           "name": {
             "type": "string"
           },
-          "category_middle": {
+          "logo": {
             "required": [
               "id",
-              "slug"
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
             ],
             "properties": {
               "id": {
@@ -552,19 +542,46 @@
               "name": {
                 "type": "string"
               },
-              "category_details": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "page": {
+              "alternativeText": {
                 "type": "string"
               },
-              "slug": {
-                "type": "uid"
+              "caption": {
+                "type": "string"
               },
-              "published_at": {
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
                 "type": "string"
               },
               "created_by": {
@@ -575,114 +592,16 @@
               }
             }
           },
-          "products": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "itemcode",
-                "price",
-                "slug"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "image": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "stock": {
-                  "type": "integer"
-                },
-                "category_details": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "tailbar": {
-                  "type": "string"
-                },
-                "heregleh_zaavar": {
-                  "type": "string"
-                },
-                "nairlaga": {
-                  "type": "string"
-                },
-                "anhaaruulga": {
-                  "type": "string"
-                },
-                "barcode": {
-                  "type": "string"
-                },
-                "itemcode": {
-                  "type": "string"
-                },
-                "price": {
-                  "type": "number"
-                },
-                "sale_qty": {
-                  "type": "number"
-                },
-                "sale_price": {
-                  "type": "number"
-                },
-                "bogino_tailbar": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "uid"
-                },
-                "brand": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "slug": {
-            "type": "uid"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewCategory-detail": {
-        "required": [
-          "name",
-          "slug"
-        ],
+      "NewBrand": {
         "properties": {
           "name": {
             "type": "string"
-          },
-          "category_middle": {
-            "type": "string"
-          },
-          "products": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "slug": {
-            "type": "uid"
           },
           "published_at": {
             "type": "string",
@@ -698,5 +617,9 @@
       }
     }
   },
-  "tags": []
+  "tags": [
+    {
+      "name": "Brand"
+    }
+  ]
 }

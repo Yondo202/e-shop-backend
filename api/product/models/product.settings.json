@@ -76,6 +76,9 @@
       "type": "uid",
       "targetField": "name",
       "required": true
+    },
+    "brand": {
+      "model": "brand"
     }
   }
 }

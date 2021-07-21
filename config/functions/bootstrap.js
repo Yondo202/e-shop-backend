@@ -14,6 +14,8 @@ const pluralize = require('pluralize');
 module.exports = () => {
     // add any rules. First argument is Regex, second is string to replace
     pluralize.addPluralRule(/Бараанууд$/i, 'Бараа Бүтээгдэхүүн');
+    pluralize.addPluralRule(/Үндсэн_Ангилал$/i, 'Үндсэн Ангилал');
     pluralize.addPluralRule(/Дэд_Ангилал$/i, 'Дэд Ангилал');
     pluralize.addPluralRule(/Доод_Ангилал$/i, 'Доод Ангилал');
+    pluralize.addPluralRule(/Брэнд$/i, 'Брэндүүд');
 };
