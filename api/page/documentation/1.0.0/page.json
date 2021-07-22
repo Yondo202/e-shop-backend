@@ -516,16 +516,14 @@
     "schemas": {
       "Page": {
         "required": [
-          "id"
+          "id",
+          "slug"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
           "name": {
-            "type": "string"
-          },
-          "slug": {
             "type": "string"
           },
           "category_middles": {
@@ -566,6 +564,9 @@
               }
             }
           },
+          "slug": {
+            "type": "uid"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -573,11 +574,11 @@
         }
       },
       "NewPage": {
+        "required": [
+          "slug"
+        ],
         "properties": {
           "name": {
-            "type": "string"
-          },
-          "slug": {
             "type": "string"
           },
           "category_middles": {
@@ -585,6 +586,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "slug": {
+            "type": "uid"
           },
           "published_at": {
             "type": "string",

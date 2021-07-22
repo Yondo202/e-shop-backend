@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/21/2021 5:57:25 PM"
+    "x-generation-date": "07/22/2021 10:23:28 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5792,7 +5792,8 @@
           },
           "page": {
             "required": [
-              "id"
+              "id",
+              "slug"
             ],
             "properties": {
               "id": {
@@ -5801,14 +5802,14 @@
               "name": {
                 "type": "string"
               },
-              "slug": {
-                "type": "string"
-              },
               "category_middles": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
+              },
+              "slug": {
+                "type": "uid"
               },
               "published_at": {
                 "type": "string"
@@ -5956,9 +5957,6 @@
                           }
                         }
                       }
-                    },
-                    "link": {
-                      "type": "string"
                     }
                   },
                   "required": [
@@ -6183,9 +6181,6 @@
                           }
                         }
                       }
-                    },
-                    "link": {
-                      "type": "string"
                     }
                   },
                   "required": [
@@ -6330,16 +6325,14 @@
       },
       "Page": {
         "required": [
-          "id"
+          "id",
+          "slug"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
           "name": {
-            "type": "string"
-          },
-          "slug": {
             "type": "string"
           },
           "category_middles": {
@@ -6380,6 +6373,9 @@
               }
             }
           },
+          "slug": {
+            "type": "uid"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6387,11 +6383,11 @@
         }
       },
       "NewPage": {
+        "required": [
+          "slug"
+        ],
         "properties": {
           "name": {
-            "type": "string"
-          },
-          "slug": {
             "type": "string"
           },
           "category_middles": {
@@ -6399,6 +6395,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "slug": {
+            "type": "uid"
           },
           "published_at": {
             "type": "string",
@@ -6922,7 +6921,8 @@
                 "type": "array",
                 "items": {
                   "required": [
-                    "id"
+                    "id",
+                    "slug"
                   ],
                   "properties": {
                     "id": {
@@ -6931,14 +6931,14 @@
                     "name": {
                       "type": "string"
                     },
-                    "slug": {
-                      "type": "string"
-                    },
                     "category_middles": {
                       "type": "array",
                       "items": {
                         "type": "string"
                       }
+                    },
+                    "slug": {
+                      "type": "uid"
                     },
                     "published_at": {
                       "type": "string"
@@ -7142,7 +7142,8 @@
                 "type": "array",
                 "items": {
                   "required": [
-                    "id"
+                    "id",
+                    "slug"
                   ],
                   "properties": {
                     "id": {
@@ -7151,14 +7152,14 @@
                     "name": {
                       "type": "string"
                     },
-                    "slug": {
-                      "type": "string"
-                    },
                     "category_middles": {
                       "type": "array",
                       "items": {
                         "type": "string"
                       }
+                    },
+                    "slug": {
+                      "type": "uid"
                     },
                     "published_at": {
                       "type": "string"

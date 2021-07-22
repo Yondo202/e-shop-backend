@@ -557,7 +557,8 @@
                 "type": "array",
                 "items": {
                   "required": [
-                    "id"
+                    "id",
+                    "slug"
                   ],
                   "properties": {
                     "id": {
@@ -566,14 +567,14 @@
                     "name": {
                       "type": "string"
                     },
-                    "slug": {
-                      "type": "string"
-                    },
                     "category_middles": {
                       "type": "array",
                       "items": {
                         "type": "string"
                       }
+                    },
+                    "slug": {
+                      "type": "uid"
                     },
                     "published_at": {
                       "type": "string"
@@ -777,7 +778,8 @@
                 "type": "array",
                 "items": {
                   "required": [
-                    "id"
+                    "id",
+                    "slug"
                   ],
                   "properties": {
                     "id": {
@@ -786,14 +788,14 @@
                     "name": {
                       "type": "string"
                     },
-                    "slug": {
-                      "type": "string"
-                    },
                     "category_middles": {
                       "type": "array",
                       "items": {
                         "type": "string"
                       }
+                    },
+                    "slug": {
+                      "type": "uid"
                     },
                     "published_at": {
                       "type": "string"

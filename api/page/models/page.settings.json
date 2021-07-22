@@ -15,12 +15,14 @@
     "name": {
       "type": "string"
     },
-    "slug": {
-      "type": "string"
-    },
     "category_middles": {
       "via": "page",
       "collection": "category-middle"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
     }
   }
 }
