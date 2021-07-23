@@ -431,6 +431,7 @@
                       "items": {
                         "required": [
                           "id",
+                          "barcode",
                           "itemcode",
                           "price",
                           "slug"
@@ -492,6 +493,12 @@
                           },
                           "brand": {
                             "type": "string"
+                          },
+                          "category_middles": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
                           },
                           "published_at": {
                             "type": "string"
@@ -655,6 +662,7 @@
                       "items": {
                         "required": [
                           "id",
+                          "barcode",
                           "itemcode",
                           "price",
                           "slug"
@@ -716,6 +724,12 @@
                           },
                           "brand": {
                             "type": "string"
+                          },
+                          "category_middles": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
                           },
                           "published_at": {
                             "type": "string"

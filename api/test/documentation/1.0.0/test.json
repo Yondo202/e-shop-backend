@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/category-middles": {
+    "/tests": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10,10 +10,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Test"
                   }
                 }
               }
@@ -52,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Category-middle"
+          "Test"
         ],
         "parameters": [
           {
@@ -202,11 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Test"
                 }
               }
             }
@@ -244,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Category-middle"
+          "Test"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCategory-middle"
+                "$ref": "#/components/schemas/NewTest"
               }
             }
           }
         }
       }
     },
-    "/category-middles/count": {
+    "/tests/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -270,8 +265,8 @@
               "application/json": {
                 "schema": {
                   "properties": {
-                    "foo": {
-                      "type": "string"
+                    "count": {
+                      "type": "integer"
                     }
                   }
                 }
@@ -311,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Category-middle"
+          "Test"
         ],
         "parameters": []
       }
     },
-    "/category-middles/{id}": {
+    "/tests/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -326,11 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Test"
                 }
               }
             }
@@ -368,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Category-middle"
+          "Test"
         ],
         "parameters": [
           {
@@ -392,11 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Test"
                 }
               }
             }
@@ -434,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Category-middle"
+          "Test"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCategory-middle"
+                "$ref": "#/components/schemas/NewTest"
               }
             }
           }
@@ -508,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Category-middle"
+          "Test"
         ],
         "parameters": [
           {
@@ -527,177 +514,25 @@
   },
   "components": {
     "schemas": {
-      "Category-middle": {
+      "Test": {
         "required": [
           "id",
-          "slug"
+          "test1",
+          "code"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "name": {
-            "type": "string"
+          "test1": {
+            "type": "string",
+            "maxLength": 100
           },
-          "category_details": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "slug"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "category_middle": {
-                  "type": "string"
-                },
-                "products": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "slug": {
-                  "type": "uid"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "page": {
-            "required": [
-              "id",
-              "slug"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "category_middles": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "slug": {
-                "type": "uid"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "slug": {
+          "code": {
             "type": "uid"
           },
-          "products": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "barcode",
-                "itemcode",
-                "price",
-                "slug"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "image": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "stock": {
-                  "type": "integer"
-                },
-                "category_details": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "tailbar": {
-                  "type": "string"
-                },
-                "heregleh_zaavar": {
-                  "type": "string"
-                },
-                "nairlaga": {
-                  "type": "string"
-                },
-                "anhaaruulga": {
-                  "type": "string"
-                },
-                "barcode": {
-                  "type": "string"
-                },
-                "itemcode": {
-                  "type": "string"
-                },
-                "price": {
-                  "type": "number"
-                },
-                "sale_qty": {
-                  "type": "number"
-                },
-                "sale_price": {
-                  "type": "number"
-                },
-                "bogino_tailbar": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "uid"
-                },
-                "brand": {
-                  "type": "string"
-                },
-                "category_middles": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "auto": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -705,31 +540,21 @@
           }
         }
       },
-      "NewCategory-middle": {
+      "NewTest": {
         "required": [
-          "slug"
+          "test1",
+          "code"
         ],
         "properties": {
-          "name": {
-            "type": "string"
+          "test1": {
+            "type": "string",
+            "maxLength": 100
           },
-          "category_details": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "page": {
-            "type": "string"
-          },
-          "slug": {
+          "code": {
             "type": "uid"
           },
-          "products": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "auto": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -745,5 +570,9 @@
       }
     }
   },
-  "tags": []
+  "tags": [
+    {
+      "name": "Test"
+    }
+  ]
 }

@@ -50,7 +50,8 @@
     "barcode": {
       "type": "string",
       "maxLength": 30,
-      "required": false
+      "required": true,
+      "unique": true
     },
     "itemcode": {
       "type": "string",
@@ -79,6 +80,11 @@
     },
     "brand": {
       "model": "brand"
+    },
+    "category_middles": {
+      "collection": "category-middle",
+      "via": "products",
+      "dominant": true
     }
   }
 }
