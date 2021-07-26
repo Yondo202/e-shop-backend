@@ -619,7 +619,6 @@
               "required": [
                 "id",
                 "barcode",
-                "itemcode",
                 "price",
                 "slug"
               ],

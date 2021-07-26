@@ -517,8 +517,7 @@
       "Test": {
         "required": [
           "id",
-          "test1",
-          "code"
+          "test1"
         ],
         "properties": {
           "id": {
@@ -542,8 +541,7 @@
       },
       "NewTest": {
         "required": [
-          "test1",
-          "code"
+          "test1"
         ],
         "properties": {
           "test1": {

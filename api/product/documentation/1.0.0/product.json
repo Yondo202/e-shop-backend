@@ -518,7 +518,6 @@
         "required": [
           "id",
           "barcode",
-          "itemcode",
           "price",
           "slug"
         ],
@@ -658,8 +657,7 @@
             "maxLength": 30
           },
           "itemcode": {
-            "type": "string",
-            "maxLength": 20
+            "type": "string"
           },
           "price": {
             "type": "number",
@@ -755,7 +753,6 @@
       "NewProduct": {
         "required": [
           "barcode",
-          "itemcode",
           "price",
           "slug"
         ],
@@ -789,8 +786,7 @@
             "maxLength": 30
           },
           "itemcode": {
-            "type": "string",
-            "maxLength": 20
+            "type": "string"
           },
           "price": {
             "type": "number",

@@ -20,7 +20,7 @@
     },
     "code": {
       "type": "uid",
-      "required": true,
+      "required": false,
       "targetField": "test1"
     },
     "auto": {

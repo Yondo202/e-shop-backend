@@ -55,8 +55,7 @@
     },
     "itemcode": {
       "type": "string",
-      "required": true,
-      "maxLength": 20,
+      "required": false,
       "unique": true
     },
     "price": {

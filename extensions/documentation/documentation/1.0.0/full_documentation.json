@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/23/2021 11:30:23 AM"
+    "x-generation-date": "07/26/2021 4:09:53 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2918,6 +2918,74 @@
         "summary": "",
         "tags": [
           "Product"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/search/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Search"
         ],
         "parameters": [
           {
@@ -6141,7 +6209,6 @@
               "required": [
                 "id",
                 "barcode",
-                "itemcode",
                 "price",
                 "slug"
               ],
@@ -6355,7 +6422,6 @@
               "required": [
                 "id",
                 "barcode",
-                "itemcode",
                 "price",
                 "slug"
               ],
@@ -6601,7 +6667,6 @@
                         "required": [
                           "id",
                           "barcode",
-                          "itemcode",
                           "price",
                           "slug"
                         ],
@@ -6832,7 +6897,6 @@
                         "required": [
                           "id",
                           "barcode",
-                          "itemcode",
                           "price",
                           "slug"
                         ],
@@ -7051,7 +7115,6 @@
         "required": [
           "id",
           "barcode",
-          "itemcode",
           "price",
           "slug"
         ],
@@ -7191,8 +7254,7 @@
             "maxLength": 30
           },
           "itemcode": {
-            "type": "string",
-            "maxLength": 20
+            "type": "string"
           },
           "price": {
             "type": "number",
@@ -7288,7 +7350,6 @@
       "NewProduct": {
         "required": [
           "barcode",
-          "itemcode",
           "price",
           "slug"
         ],
@@ -7322,8 +7383,7 @@
             "maxLength": 30
           },
           "itemcode": {
-            "type": "string",
-            "maxLength": 20
+            "type": "string"
           },
           "price": {
             "type": "number",
@@ -7898,8 +7958,7 @@
       "Test": {
         "required": [
           "id",
-          "test1",
-          "code"
+          "test1"
         ],
         "properties": {
           "id": {
@@ -7923,8 +7982,7 @@
       },
       "NewTest": {
         "required": [
-          "test1",
-          "code"
+          "test1"
         ],
         "properties": {
           "test1": {
@@ -8246,6 +8304,9 @@
     },
     {
       "name": "Product"
+    },
+    {
+      "name": "Search"
     },
     {
       "name": "Settings"
