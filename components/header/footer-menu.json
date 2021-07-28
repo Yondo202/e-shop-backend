@@ -2,15 +2,35 @@
   "collectionName": "components_header_footer_menus",
   "info": {
     "name": "footer_menu",
-    "icon": "align-left"
+    "icon": "align-left",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "name": {
+    "FooterMenu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.footer-menu"
+    },
+    "phone": {
       "type": "string"
     },
-    "slug": {
+    "Copyright": {
       "type": "string"
+    },
+    "aboutUs": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "SocialButton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.social-button"
     }
   }
 }

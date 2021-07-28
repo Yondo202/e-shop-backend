@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_components_footer_menus",
+  "info": {
+    "name": "FooterMenu",
+    "icon": "angle-down"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

@@ -14,7 +14,7 @@
   "attributes": {
     "footer_menu": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "header.footer-menu"
     },
     "help_menu": {

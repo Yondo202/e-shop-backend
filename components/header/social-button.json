@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_header_social_buttons",
+  "info": {
+    "name": "SocialButton",
+    "icon": "angle-double-down"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
