@@ -457,9 +457,6 @@
                               "type": "string"
                             }
                           },
-                          "tailbar": {
-                            "type": "string"
-                          },
                           "heregleh_zaavar": {
                             "type": "string"
                           },
@@ -498,6 +495,9 @@
                             "items": {
                               "type": "string"
                             }
+                          },
+                          "buteegdehuun_tailbar": {
+                            "type": "string"
                           },
                           "published_at": {
                             "type": "string"
@@ -687,9 +687,6 @@
                               "type": "string"
                             }
                           },
-                          "tailbar": {
-                            "type": "string"
-                          },
                           "heregleh_zaavar": {
                             "type": "string"
                           },
@@ -728,6 +725,9 @@
                             "items": {
                               "type": "string"
                             }
+                          },
+                          "buteegdehuun_tailbar": {
+                            "type": "string"
                           },
                           "published_at": {
                             "type": "string"

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/28/2021 3:23:10 PM"
+    "x-generation-date": "07/29/2021 11:48:06 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6234,9 +6234,6 @@
                     "type": "string"
                   }
                 },
-                "tailbar": {
-                  "type": "string"
-                },
                 "heregleh_zaavar": {
                   "type": "string"
                 },
@@ -6275,6 +6272,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "buteegdehuun_tailbar": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -6447,9 +6447,6 @@
                     "type": "string"
                   }
                 },
-                "tailbar": {
-                  "type": "string"
-                },
                 "heregleh_zaavar": {
                   "type": "string"
                 },
@@ -6488,6 +6485,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "buteegdehuun_tailbar": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -6692,9 +6692,6 @@
                               "type": "string"
                             }
                           },
-                          "tailbar": {
-                            "type": "string"
-                          },
                           "heregleh_zaavar": {
                             "type": "string"
                           },
@@ -6733,6 +6730,9 @@
                             "items": {
                               "type": "string"
                             }
+                          },
+                          "buteegdehuun_tailbar": {
+                            "type": "string"
                           },
                           "published_at": {
                             "type": "string"
@@ -6922,9 +6922,6 @@
                               "type": "string"
                             }
                           },
-                          "tailbar": {
-                            "type": "string"
-                          },
                           "heregleh_zaavar": {
                             "type": "string"
                           },
@@ -6963,6 +6960,9 @@
                             "items": {
                               "type": "string"
                             }
+                          },
+                          "buteegdehuun_tailbar": {
+                            "type": "string"
                           },
                           "published_at": {
                             "type": "string"
@@ -7237,9 +7237,6 @@
               }
             }
           },
-          "tailbar": {
-            "type": "string"
-          },
           "heregleh_zaavar": {
             "type": "string"
           },
@@ -7341,6 +7338,9 @@
               }
             }
           },
+          "buteegdehuun_tailbar": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -7365,9 +7365,6 @@
             "items": {
               "type": "string"
             }
-          },
-          "tailbar": {
-            "type": "string"
           },
           "heregleh_zaavar": {
             "type": "string"
@@ -7409,6 +7406,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "buteegdehuun_tailbar": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

@@ -35,9 +35,6 @@
       "collection": "category-detail",
       "dominant": true
     },
-    "tailbar": {
-      "type": "text"
-    },
     "heregleh_zaavar": {
       "type": "text"
     },
@@ -84,6 +81,9 @@
       "collection": "category-middle",
       "via": "products",
       "dominant": true
+    },
+    "buteegdehuun_tailbar": {
+      "type": "richtext"
     }
   }
 }
